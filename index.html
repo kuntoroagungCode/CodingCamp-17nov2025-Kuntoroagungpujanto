@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio Kuntoro Agung Pujanto</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="main-header p-[8px] bg-blue-500 flex justify-between items-center shadow">
+
+        <div class="flex items-center gap-3">
+            <div class="logo-icon"></div>
+            <span class="p-6 text-center text-white font-medium">Agung Company</span>
+        </div>
+
+        <nav class="flex gap-4">
+            <a class="border px-3 py-1 rounded bg-white" href="#home-page">Home</a>
+            <a class="border px-3 py-1 rounded bg-white" href="#our-profile-page">Our Profile</a>
+            <a class="border px-3 py-1 rounded bg-white" href="#portfolio-page">Portofolio</a>
+            <a class="border px-3 py-1 rounded bg-white" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+    <hr />
+
+    <main>
+        <!-- Home page -->
+        <section id="home-page"
+            class="min-h-[600px] flex flex-col justify-center items-center px-6 bg-gradient-to-b from-grey-400 to-grey-200 text-gray-800">
+
+            <h2 class="text-4xl font-extrabold drop-shadow" id="welcome-speech">Welcome To Our Website</h2>
+            <p class="mt-2 text-lg opacity-90">We are glad to have u here, expiore our services.</p>
+            <img src="https://picsum.photos/360" class="mt-8 rounded-2x1 shadow-x1 border-4 border-white" />
+        </section>
+        <hr />
+
+        <!-- Our Profile pages -->
+        <section id="our-profile-page"
+            class="min-h-[600px] flex flex-col justify-center items-center px-6 bg-gradient-to-b from-grey-400 to-grey-200 text-gray-800">
+            <h2 class="text-3xl font-bold">Tentang Saya</h2>
+            <p class="mt-2 text-lg text-center max-w-xl">Saya Manusia yang berkarakter dan disiplin kata mamah saya.</p>
+
+            <hr />
+            <!-- isi profil -->
+            <div class="mt-8 bg-white p-6 rounded-xl shadow-lg w-full max-w-lg text-center">
+                <img src="image/myPhoto.jpeg" class="w-35 h-35 mx-auto rounded-full shadow border mb-5" alt="profile" />
+
+                <h3 class="text-xl font-semibold">Kuntoro Agung Pujanto<h3>
+                        <p class="text-gray-600">D3 Informatics System</p>
+
+                        <p class="mt-4 text-gray-700">
+                            Saya Fresh Gradute, Memiliki pengalaman magang di PT. Jala Lintas Media sebagai IT Support
+                            selama 6 bulan,
+                            Saya juga memiliki ketertarikan terhadap dunia Front End Developer menggunakan Html, Css dan
+                            Javascript
+                            Saya sangat bersemangat berkarir didunia IT, seiring berjalanny waktu saya yakin dapat
+                            menambah
+                            ilmu dan pengetahuan untuk saya kedepannya.
+                        </p>
+
+                        <div class="mt-4 flex justify-center gap-4">
+                            <a href="https://www.instagram.com/kuntt.agunggg" target="_blank"
+                                class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Contact</a>
+
+                            <a href="https//www.instagram.com/kuntt.agunggg" target="_blank"
+                            class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition">More Info</a>
+            </div>
+        </section>
+
+        <hr />
+
+
+        <!-- Portofolio pages -->
+        <section id="portfolio-page"
+            class="min-h-[600px] flex flex-col justify-center items-center px-6 bg-gradient-to-b from-grey-400 to-grey-200 text-gray-800">
+
+            <h2 class="text-3xl font-bold text-center">Our Portfolio</h2>
+            <p class="mt-2 text-center text-gray-600">
+                Take a look at out diverse range at projects that show skills.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-5xl mx-auto">
+                <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+                    <img src="image/webkopisaya.png"> Web Kopi Kenangan Mantan Dengan Payment Gateway dengan integrasi
+                    API Backend
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+                    <img src="image/webcompanyprofile.png"> Web Company Profile
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+                    <img src="image/websitesederhana.png"> Website Navigasi Informasi Sederhana
+                </div>
+
+            </div>
+        </section>
+        <hr />
+
+        <!-- Message Us pages -->
+        <section id="message-us-page" class="py-16 px-8 bg-gray-100">
+            <div class="max-w 6x1 mx-auto">
+                <header class="text-center mb-10">
+                    <h2 class="text-3xl font-bold">Message Us</h2>
+                    <p class="mt-2 text-gray-700">Have questions or want to work with us? send us a message and we'll
+                        get back to
+                        yout promptly .</p>
+                </header>
+
+                <div class="flex flex-col md:flex-row gap-10">
+
+
+                    <!-- form -->
+
+                    <form id="myForm" class="bg-white p-8 rounded-2xl shadow-xl flex-1 space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1" for="name">Name:</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full p-3 border  rounded-lg focus:ring-2 focus:ring-blue-400" />
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1" for="birth">Tanggal Lahir:</label>
+                            <input type="date" id="birth" name="birth" required class="w-full p-3 border rounded-lg
+                                focus:ring-2 focus:ring-blue-400" />
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1" for="email">Email:</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full p-3 border  rounded-lg focus:ring-2 focus:ring-blue-400" />
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1" for="gender">Jenis Kelamin:</label>
+
+                            <div class="flex items-center gap-6 mt-1">
+                                <label class="flex items-center gap-2">
+                                    <input type="radio" name="gender" value="Laki-laki" class="w-4 h-4" required>
+                                    <span>Laki-laki</span>
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="radio" name="gender" value="Perempuan" class="w-4 h-4" required>
+                                    <span>Perempuan</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1" for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full p-3 border  rounded-lg focus:ring-2 focus:ring-blue-400" required>
+                            </textarea>
+
+                        </div>
+                        <button type="submit"
+                            class="w-full py-3 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 shadow-lg hover:shadow-xl transition-all">Send
+                            Message</button>
+
+                    </form>
+
+                    <!-- lokasi maps -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex-1">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Lokasi Saya</h3>
+                        <p class="mb-4 text-gray-600">Kota Depok, Jawa Barat, Indonesia</p>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6901759804327!2d106.8507304740282!3d-6.433828462913733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb67e767cb6d%3A0x2f5d75c359f45d83!2sD&#39;Marco%20Residence!5e0!3m2!1sid!2sid!4v1763720879151!5m2!1sid!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">Location</iframe>
+                    </div>
+
+                    <div id="popupModal"
+                        class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+                        <div class="bg-white w-80 p-6 rounded-xl shadow-lg text-center">
+                            <h3 class="text-xl font-bold mb-3 text-green-600">Message Sent!</h3>
+
+                            <p id="popupName"></p>
+                            <p id="popupEmail"></p>
+                            <p id="popupBirth"></p>
+                            <p id="popupGender"></p>
+                            <p id="popupMessage"></p>
+
+
+                            <button id="closePopup"
+                                class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">Close</button>
+                        </div>
+                    </div>
+        </section>
+
+
+    </main>
+
+    <hr />
+
+
+    <footer class="p-6 bg-blue-500 text-center text-white font-medium">
+        @2025 Agung Company. All rights reserved.
+    </footer>
+
+    <!-- js external -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
